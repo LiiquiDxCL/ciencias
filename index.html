@@ -11,7 +11,7 @@
 <body>
  
   <!--HEADER-->
-
+<!-- 
   <div class="px-4 py-5 my-5 text-center">
     <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
     <h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1>
@@ -22,26 +22,40 @@
         <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!--CARRUSEL DE VIDEOS-->
   <main>
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-mdb-interval="false" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item">
-          <iframe width="100%" height="1080px" src="https://www.youtube.com/embed/Q1_eLOaxi5Q?si=kTbFHVeckPEGB4tj&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <div class="container">
-            <div class="carousel-caption text-start">
-              <h1>Example headline.</h1>
-              <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+        <div class="carousel-item active">
+          <div class="container-fluid p-0">
+            <div class="video-responsive">
+              <iframe src="https://www.youtube.com/embed/Q1_eLOaxi5Q?si=kTbFHVeckPEGB4tj&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
             </div>
           </div>
+          <style>
+          .video-responsive {
+            height: 0;
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            position: relative;
+            }
+          .video-responsive iframe, .video-responsive object, .video-responsive embed {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            }
+
+            </style>
           <div class="container marketing">
             <div class="row">
               <div class="col-lg-4">
@@ -64,7 +78,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item active">
+        <div class="carousel-item">
           <iframe width="100%" height="1080px" src="https://www.youtube.com/embed/Q1_eLOaxi5Q?si=kTbFHVeckPEGB4tj&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <div class="container">
             <div class="carousel-caption">
@@ -98,27 +112,27 @@
 
     </div>
   <!--FOTOS ESTUDIANTES-->
-      <div class="container marketing">
+      <!-- <div class="container marketing">
         <div class="row">
           <div class="col-lg-4">
             <img src="bb.jpg" class="rounded-circle" alt="..." width="140" height="140">
             <h2 class="fw-normal">Heading</h2>
             <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
             
-          </div><!-- /.col-lg-4 -->
+          </div>
           <div class="col-lg-4">
             <img src="bb.jpg" class="rounded-circle" alt="..." width="140" height="140">
             <h2 class="fw-normal">Heading</h2>
             <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
             
-          </div><!-- /.col-lg-4 -->
+          </div>
           <div class="col-lg-4">
             <img src="bb.jpg" class="rounded-circle" alt="..." width="140" height="140"><h2 class="fw-normal">Heading</h2>
             <p>And lastly this, the third column of representative placeholder content.</p>
             
-          </div><!-- /.col-lg-4 -->
+          </div>
         </div>
-      </div>
+      </div> -->
   <!--FOOTER-->
 
     <div class="container">
