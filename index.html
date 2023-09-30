@@ -16,11 +16,13 @@
 
     .video-responsive {
       height: 0;
+      max-height: 100vh;
       overflow: hidden;
-      padding-bottom: 56.25%;
+      padding-bottom: min(56.25%, 100vh);
       padding-top: 30px;
       position: relative;
     }
+
 
     .video-responsive iframe,
     .video-responsive object,
