@@ -6,23 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="carousel.css">
-  <title>Document</title>
+  <style>
+    .video-responsive {
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      position: relative;
+      }
+    .video-responsive iframe, .video-responsive object, .video-responsive embed {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      }
+
+      </style>
+  <title>LiceoAVB</title>
 </head>
 <body>
- 
-  <!--HEADER-->
-<!-- 
-  <div class="px-4 py-5 my-5 text-center">
-    <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-    <h1 class="display-5 fw-bold text-body-emphasis">Centered hero</h1>
-    <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-      </div>
-    </div>
-  </div> -->
 
   <!--CARRUSEL DE VIDEOS-->
   <main>
@@ -34,28 +37,11 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="container-fluid p-0">
+          <div class="container p-0">
             <div class="video-responsive">
               <iframe src="https://www.youtube.com/embed/Q1_eLOaxi5Q?si=kTbFHVeckPEGB4tj&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
             </div>
           </div>
-          <style>
-          .video-responsive {
-            height: 0;
-            overflow: hidden;
-            padding-bottom: 56.25%;
-            padding-top: 30px;
-            position: relative;
-            }
-          .video-responsive iframe, .video-responsive object, .video-responsive embed {
-            height: 100%;
-            left: 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            }
-
-            </style>
           <div class="container marketing">
             <div class="row">
               <div class="col-lg-4">
