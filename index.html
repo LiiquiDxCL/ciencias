@@ -1,72 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="carousel.css">
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
     .video-responsive {
       height: 0;
       overflow: hidden;
       padding-bottom: 56.25%;
       padding-top: 30px;
       position: relative;
-      }
-    .video-responsive iframe, .video-responsive object, .video-responsive embed {
-      height: 100%;
+    }
+
+    .video-responsive iframe,
+    .video-responsive object,
+    .video-responsive embed {
+      height: 100vh;
       left: 0;
       position: absolute;
       top: 0;
       width: 100%;
-      }
-
-      </style>
+    }
+  </style>
   <title>LiceoAVB</title>
 </head>
+
 <body>
 
   <!--CARRUSEL DE VIDEOS-->
   <main>
-    <div id="myCarousel" class="carousel slide" data-mdb-interval="false" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-      </div>
+    <div id="myCarousel" class="carousel slide" data-bs-interval="false">
       <div class="carousel-inner">
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
         <div class="carousel-item active">
-          <div class="container p-0">
+          <div class="container-fluid p-0">
             <div class="video-responsive">
-              <iframe src="https://www.youtube.com/embed/Q1_eLOaxi5Q?si=kTbFHVeckPEGB4tj&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/Q1_eLOaxi5Q?si=kTbFHVeckPEGB4tj&rel=0"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; gyroscope;"
+                allowfullscreen></iframe>
             </div>
           </div>
-          <div class="container marketing">
-            <div class="row">
-              <div class="col-lg-4">
-                <img src="bb.jpg" class="rounded-circle" alt="..." width="140" height="140">
-                <h2 class="fw-normal">Heading</h2>
-                <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-                
-              </div><!-- /.col-lg-4 -->
-              <div class="col-lg-4">
-                <img src="bb.jpg" class="rounded-circle" alt="..." width="140" height="140">
-                <h2 class="fw-normal">Heading</h2>
-                <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-                
-              </div><!-- /.col-lg-4 -->
-              <div class="col-lg-4">
-                <img src="bb.jpg" class="rounded-circle" alt="..." width="140" height="140"><h2 class="fw-normal">Heading</h2>
-                <p>And lastly this, the third column of representative placeholder content.</p>
-                
-              </div><!-- /.col-lg-4 -->
+          <div class="container-fluid p-5">
+            <div class="container marketing">
+              <div class="row">
+                <div class="col-lg-4">
+                  <img src="bb.jpg" class="rounded-circle" alt="..." width="140" height="140">
+                  <h2 class="fw-normal">Heading</h2>
+                  <p>Some representative placeholder content for the three columns of text below the carousel. This is
+                    the
+                    first column.</p>
+
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <img src="bb.jpg" class="rounded-circle" alt="..." width="140" height="140">
+                  <h2 class="fw-normal">Heading</h2>
+                  <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second
+                    column.</p>
+
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                  <img src="bb.jpg" class="rounded-circle" alt="..." width="140" height="140">
+                  <h2 class="fw-normal">Heading</h2>
+                  <p>And lastly this, the third column of representative placeholder content.</p>
+
+                </div><!-- /.col-lg-4 -->
+              </div>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <iframe width="100%" height="1080px" src="https://www.youtube.com/embed/Q1_eLOaxi5Q?si=kTbFHVeckPEGB4tj&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="container">
+          <iframe width="100%" height="1080px" src="https://www.youtube.com/embed/Q1_eLOaxi5Q?si=kTbFHVeckPEGB4tj&rel=0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <div class="container">
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
               <p>Some representative placeholder content for the second slide of the carousel.</p>
@@ -75,7 +99,11 @@
           </div>
         </div>
         <div class="carousel-item">
-          <iframe width="100%" height="1080px" src="https://www.youtube.com/embed/Q51rZjo_SJs?si=LNYMd5d9DxGO5MkN&rel=0&controls=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="100%" height="1080px"
+            src="https://www.youtube.com/embed/Q51rZjo_SJs?si=LNYMd5d9DxGO5MkN&rel=0&controls=3"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
           <div class="container">
             <div class="carousel-caption text-end">
               <h1>One more for good measure.</h1>
@@ -85,20 +113,13 @@
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
 
-      
+
+
 
     </div>
-  <!--FOTOS ESTUDIANTES-->
-      <!-- <div class="container marketing">
+    <!--FOTOS ESTUDIANTES-->
+    <!-- <div class="container marketing">
         <div class="row">
           <div class="col-lg-4">
             <img src="bb.jpg" class="rounded-circle" alt="..." width="140" height="140">
@@ -119,16 +140,19 @@
           </div>
         </div>
       </div> -->
-  <!--FOOTER-->
+    <!--FOOTER-->
 
     <div class="container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <p class="col-md-4 mb-0 text-body-secondary">© 2023 Company, Inc</p>
-    
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+
+        <a href="/"
+          class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
         </a>
-    
+
         <ul class="nav col-md-4 justify-content-end">
           <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
@@ -140,10 +164,12 @@
     </div>
 
   </main>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
-
-
-
