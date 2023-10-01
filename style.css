@@ -9,6 +9,12 @@
 
 .bg-ciencias {
   background-image: url(img/bg-ciencias.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.mw-personalized {
+  max-width: 1000px;
 }
 
 body::-webkit-scrollbar {
