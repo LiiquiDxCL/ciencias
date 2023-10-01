@@ -14,8 +14,42 @@
   background-size: cover;
 }
 
+.bg-personalized {
+  background-color: rgb(26, 26, 26);
+}
+
 .mw-personalized {
   max-width: 1000px;
+}
+
+.fa {
+  padding: 7px;
+  font-size: 30px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 5px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-instagram {
+  background-image: url(img/instagram-background.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.fa-tiktok {
+  background: #cb2027;
+  color: white;
 }
 
 body::-webkit-scrollbar {
