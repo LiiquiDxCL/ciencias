@@ -51,41 +51,6 @@
   max-width: 500px;
 }
 
-.fa {
-  padding: 7px;
-  font-size: 30px;
-  width: 44px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 5px;
-  border-radius: 5px;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3b5998;
-  color: white;
-}
-
-.fa-instagram {
-  background-image: url(img/instagram-background.png);
-  background-position: center;
-  background-size: cover;
-}
-
-.fa-tiktok {
-  background: #000000;
-  color: white;
-}
-
-.newfont {
-  font-family: "Josefin Sans", Impact, Haettenschweiler, "Arial Narrow Bold",
-    sans-serif;
-}
-
 body::-webkit-scrollbar {
   display: none;
 }
@@ -132,6 +97,36 @@ body::-webkit-scrollbar {
 /* IMAGENES ALUMNOS
 ---------------------------------------------------- */
 
+.animated-box {
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  width: 147px;
+  height: 147px;
+  background-color: #292c30;
+}
+
+.animated-box::before {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  border-radius: 100px;
+  width: 50px;
+  height: 110%;
+  background-color: white;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
@@ -141,6 +136,39 @@ body::-webkit-scrollbar {
 .marketing .col-lg-4 p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
+}
+
+/* CUSTOMIZE THE FOOTER
+---------------------------------------------------- */
+
+.fa {
+  padding: 7px;
+  font-size: 30px;
+  width: 44px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 5px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-instagram {
+  background-image: url(img/instagram-background.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.fa-tiktok {
+  background: #000000;
+  color: white;
 }
 
 /* RESPONSIVE CSS
