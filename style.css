@@ -5,7 +5,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Josefin Sans", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+}
+
+.logo-mod {
+  width: 110px;
+  height: 110px;
 }
 
 .bg-ciencias {
@@ -14,18 +20,41 @@
   background-size: cover;
 }
 
-.bg-personalized {
-  background-color: rgb(26, 26, 26);
+.divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(30, 33, 37);
+  border: solid rgba(30, 33, 37);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0);
+}
+
+.divider2 {
+  width: 100%;
+  height: 3rem;
+  background-color: #212529;
+}
+
+.bg-personalized1 {
+  background-color: #2b3035;
+}
+
+.bg-personalized2 {
+  background-color: #212529;
 }
 
 .mw-personalized {
   max-width: 1000px;
 }
 
+.mw-personalized1 {
+  max-width: 500px;
+}
+
 .fa {
   padding: 7px;
   font-size: 30px;
-  width: 45px;
+  width: 44px;
   text-align: center;
   text-decoration: none;
   margin: 5px 5px;
@@ -50,6 +79,11 @@
 .fa-tiktok {
   background: #cb2027;
   color: white;
+}
+
+.newfont {
+  font-family: "Josefin Sans", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -128,5 +162,17 @@ body::-webkit-scrollbar {
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+}
+
+@media (max-width: 592px) {
+  .mw-personalized1 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 760px) {
+  .responsive-mod-ul {
+    width: 170px;
   }
 }
