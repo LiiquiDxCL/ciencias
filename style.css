@@ -5,6 +5,50 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Josefin Sans", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+}
+
+.logo-mod {
+  width: 110px;
+  height: 110px;
+}
+
+.bg-ciencias {
+  background-image: url(img/bg-ciencias.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(30, 33, 37);
+  border: solid rgba(30, 33, 37);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0);
+}
+
+.divider2 {
+  width: 100%;
+  height: 3rem;
+  background-color: #212529;
+}
+
+.bg-personalized1 {
+  background-color: #2b3035;
+}
+
+.bg-personalized2 {
+  background-color: #212529;
+}
+
+.mw-personalized {
+  max-width: 1000px;
+}
+
+.mw-personalized1 {
+  max-width: 500px;
 }
 
 body::-webkit-scrollbar {
@@ -53,6 +97,36 @@ body::-webkit-scrollbar {
 /* IMAGENES ALUMNOS
 ---------------------------------------------------- */
 
+.animated-box {
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  width: 147px;
+  height: 147px;
+  background-color: #292c30;
+}
+
+.animated-box::before {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  border-radius: 100px;
+  width: 50px;
+  height: 110%;
+  background-color: white;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
@@ -62,6 +136,39 @@ body::-webkit-scrollbar {
 .marketing .col-lg-4 p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
+}
+
+/* CUSTOMIZE THE FOOTER
+---------------------------------------------------- */
+
+.fa {
+  padding: 7px;
+  font-size: 30px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 5px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-instagram {
+  background-image: url(img/instagram-background.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.fa-tiktok {
+  background: #000000;
+  color: white;
 }
 
 /* RESPONSIVE CSS
@@ -83,5 +190,17 @@ body::-webkit-scrollbar {
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+}
+
+@media (max-width: 592px) {
+  .mw-personalized1 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 760px) {
+  .responsive-mod-ul {
+    width: 170px;
   }
 }
