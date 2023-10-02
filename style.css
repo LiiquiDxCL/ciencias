@@ -116,6 +116,9 @@ body::-webkit-scrollbar {
   background-color: white;
   animation: animate 4s linear infinite;
 }
+.animated-box:hover::before{
+  inset: 0px -30px;
+}
 
 @keyframes animate {
   0% {
